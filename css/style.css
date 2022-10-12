@@ -94,6 +94,30 @@ body {
 .sidebar {
   background-color: #c69963;
   grid-row: 1/-1;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-btn {
+  border: none;
+  border-radius: 0;
+  background-color: #fff;
+  width: 4.5rem;
+  height: 2px;
+  margin-top: 4rem;
+}
+.nav-btn::before, .nav-btn::after {
+  background-color: #fff;
+  width: 4.5rem;
+  height: 2px;
+  content: "";
+  display: block;
+}
+.nav-btn::before {
+  transform: translateY(-1.5rem);
+}
+.nav-btn::after {
+  transform: translateY(1.4rem);
 }
 
 .header {
