@@ -24,17 +24,64 @@ body {
   grid-template-columns: 8rem repeat(12, 1fr);
 }
 
-.heading-1,
-.heading-2,
-.heading-3,
-.heading-4 {
-  font-family: "Josefin Sans", sans-serif;
+.heading-4, .heading-3, .heading-2, .heading-1 {
+  font-family: "Josefin Sans", sans-serif, sans-serif;
   font-weight: 400;
 }
 
+.heading-2 {
+  font-size: 4rem;
+  font-style: italic;
+  line-height: 1;
+}
+.heading-2--dark {
+  color: #54483a;
+}
+.heading-2--light {
+  color: #f9f7f6;
+}
+
+.heading-3 {
+  font-size: 1.6rem;
+  color: #c69963;
+  text-transform: uppercase;
+}
+
+.heading-4 {
+  font-size: 2rem;
+}
 .heading-4--dark {
   color: #54483a;
-  font-size: 2rem;
+}
+.heading-4--light {
+  color: #f9f7f6;
+}
+
+.btn {
+  background-color: #c69963;
+  color: #fff;
+  border: none;
+  border-radius: 0;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  padding: 1.8rem 3rem;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #a1733b;
+}
+
+.mb-sm {
+  margin-bottom: 2rem;
+}
+
+.mb-md {
+  margin-bottom: 3rem;
+}
+
+.mb-lg {
+  margin-bottom: 4rem;
 }
 
 .sidebar {
@@ -88,6 +135,16 @@ body {
 .story__content {
   background-color: #f9f7f6;
   grid-column: 8/-1;
+  padding: 6rem 5vw 6rem 10vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.story__text {
+  font-size: 1.6rem;
+  font-style: italic;
+  margin-bottom: 4rem;
 }
 
 .homes {

@@ -9,5 +9,16 @@
   &__content {
     background-color: $color-grey-light-1;
     grid-column: 8 / -1;
+    padding: 6rem 5vw 6rem 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  &__text {
+    font-size: 1.6rem;
+    font-style: italic;
+    margin-bottom: 4rem;
   }
 }
