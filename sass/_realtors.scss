@@ -1,0 +1,6 @@
+@use "variables" as *;
+
+.realtors {
+  background-color: $color-secondary;
+  grid-column: 10/-1;
+}
