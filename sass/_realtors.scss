@@ -3,4 +3,42 @@
 .realtors {
   background-color: $color-secondary;
   grid-column: 10/-1;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+}
+
+.realtor {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  column-gap: 2rem;
+  align-items: center;
+
+  &__img {
+    height: 8rem;
+    width: 8rem;
+    border-radius: 1000rem;
+    grid-row: 1/-1;
+  }
+
+  &__name {
+    font-family: $font-display;
+    color: $color-grey-light-1;
+    font-size: 1.8rem;
+    font-weight: 400;
+  }
+
+  &__sold {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    color: $color-grey-light-2;
+  }
 }
