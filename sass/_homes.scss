@@ -1,6 +1,86 @@
 @use "variables" as *;
 
+%home-info {
+  display: flex;
+  gap: 1.6rem;
+  font-size: 1.6rem;
+  margin-left: 2rem;
+  margin-bottom: 4rem;
+}
+
+%mt-sm {
+  margin-top: 2rem;
+}
+
 .homes {
-  background-color: $color-secondary;
   grid-column: 2/-1;
+  margin: 15rem auto;
+  display: grid;
+  grid-template-columns: repeat(3, 18%);
+  justify-content: center;
+  gap: 7rem;
+}
+
+.home {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: $color-grey-light-1;
+
+  &__img {
+    width: 100%;
+    grid-column: 1/-1;
+    grid-row: 1;
+  }
+
+  &__like {
+    height: 2.4rem;
+    width: 2.4rem;
+    fill: $color-primary;
+    grid-column: 2;
+    grid-row: 1;
+    display: inline-block;
+    justify-self: end;
+    margin: 1rem;
+  }
+  &__name {
+    font-family: $font-display;
+    font-weight: 400;
+    grid-column: span 2;
+    font-size: 1.6rem;
+    width: 80%;
+    background-color: $color-secondary;
+    padding: 1.25rem;
+    color: #fff;
+    text-align: center;
+    justify-self: center;
+    transform: translateY(-50%);
+  }
+
+  &__icon {
+    height: 2.4rem;
+    width: 2.4rem;
+    fill: $color-primary;
+  }
+
+  &__location {
+    @extend %home-info;
+    @extend %mt-sm;
+  }
+
+  &__rooms {
+    @extend %home-info;
+    @extend %mt-sm;
+  }
+
+  &__area {
+    @extend %home-info;
+  }
+
+  &__price {
+    @extend %home-info;
+  }
+
+  &__btn {
+    grid-column: 1/-1;
+  }
 }

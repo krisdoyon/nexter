@@ -67,6 +67,7 @@ body {
   text-transform: uppercase;
   padding: 1.8rem 3rem;
   cursor: pointer;
+  transition: all 0.2s;
 }
 .btn:hover {
   background-color: #a1733b;
@@ -165,9 +166,67 @@ body {
   margin-bottom: 4rem;
 }
 
+.home__price, .home__area, .home__rooms, .home__location {
+  display: flex;
+  gap: 1.6rem;
+  font-size: 1.6rem;
+  margin-left: 2rem;
+  margin-bottom: 4rem;
+}
+
+.home__rooms, .home__location {
+  margin-top: 2rem;
+}
+
 .homes {
-  background-color: #101d2c;
   grid-column: 2/-1;
+  margin: 15rem auto;
+  display: grid;
+  grid-template-columns: repeat(3, 18%);
+  justify-content: center;
+  gap: 7rem;
+}
+
+.home {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: #f9f7f6;
+}
+.home__img {
+  width: 100%;
+  grid-column: 1/-1;
+  grid-row: 1;
+}
+.home__like {
+  height: 2.4rem;
+  width: 2.4rem;
+  fill: #c69963;
+  grid-column: 2;
+  grid-row: 1;
+  display: inline-block;
+  justify-self: end;
+  margin: 1rem;
+}
+.home__name {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  grid-column: span 2;
+  font-size: 1.6rem;
+  width: 80%;
+  background-color: #101d2c;
+  padding: 1.25rem;
+  color: #fff;
+  text-align: center;
+  justify-self: center;
+  transform: translateY(-50%);
+}
+.home__icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  fill: #c69963;
+}
+.home__btn {
+  grid-column: 1/-1;
 }
 
 .gallery {
