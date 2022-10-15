@@ -19,6 +19,23 @@
   grid-template-columns: repeat(3, 18%);
   justify-content: center;
   gap: 7rem;
+
+  @media only screen and (max-width: 62.5em) {
+    grid-column: 1/-1;
+    max-width: 110rem;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 5rem;
+    gap: 5rem;
+  }
+
+  @media only screen and (max-width: 50em) {
+    grid-column: 1/-1;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media only screen and (max-width: 50em) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .home {

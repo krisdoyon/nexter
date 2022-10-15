@@ -4,6 +4,12 @@
   background-color: $color-secondary;
   grid-column: 2/-1;
   padding: 4.4rem;
+
+  @media only screen and (max-width: 62.5em) {
+    grid-column: 1/-1;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .nav {
@@ -11,6 +17,15 @@
   grid-template-columns: repeat(6, 1fr);
   list-style: none;
   gap: 2rem;
+
+  @media only screen and (max-width: 62.5em) {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 90rem;
+  }
+
+  @media only screen and (max-width: 37.5em) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
   &__link {
     color: $color-grey-light-1;

@@ -5,6 +5,11 @@
   grid-row: 1/-1;
   display: flex;
   justify-content: center;
+
+  @media only screen and (max-width: 62.5em) {
+    grid-column: 1/-1;
+    grid-row: 1;
+  }
 }
 
 .nav-btn {

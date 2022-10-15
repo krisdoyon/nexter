@@ -11,6 +11,10 @@
   gap: 1.6rem;
   padding: 1.6rem;
 
+  @media only screen and (max-width: 62.5em) {
+    grid-column: 1/-1;
+  }
+
   &__item {
     overflow: hidden;
   }

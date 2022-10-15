@@ -9,10 +9,28 @@
   flex-direction: column;
   justify-content: center;
   gap: 2rem;
+
+  @media only screen and (max-width: 62.5em) {
+    grid-column: 9/-1;
+  }
+
+  @media only screen and (max-width: 50em) {
+    grid-column: 1/-1;
+    padding: 5rem 0;
+  }
+
   &__list {
     display: flex;
     flex-direction: column;
     gap: 3rem;
+
+    @media only screen and (max-width: 50em) {
+      flex-direction: row;
+    }
+
+    @media only screen and (max-width: 37.5em) {
+      flex-direction: column;
+    }
   }
 }
 
